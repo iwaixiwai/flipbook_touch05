@@ -107,9 +107,8 @@ function draw()
   
   if(index != index_old)
   {
-//    myAudio[0].play();
-//    snd[index%3].stop();
-//    snd[index%3].pause();
+    snd[index%3].pause();
+    snd[index%3].currentTime = 0;
     snd[index%3].play();
     flip_flag = 1;
     
